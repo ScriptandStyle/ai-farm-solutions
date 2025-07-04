@@ -1,0 +1,42 @@
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: var(--card-shadow);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+.theme-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.theme-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: rotate(15deg);
+} 
